@@ -1,0 +1,11 @@
+{
+  "success": false,
+  "error": {
+    "code": "VALIDATION_ERROR",
+    "message": "Invalid input provided",
+    "details": {
+      "field": "email",
+      "reason": "Invalid email format"
+    }
+  }
+}

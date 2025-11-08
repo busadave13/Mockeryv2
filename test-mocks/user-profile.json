@@ -1,0 +1,34 @@
+{
+  "id": "user-456",
+  "username": "johndoe",
+  "profile": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "avatar": "https://example.com/avatars/johndoe.jpg",
+    "bio": "Software developer and coffee enthusiast",
+    "socialLinks": {
+      "twitter": "@johndoe",
+      "github": "johndoe",
+      "linkedin": "john-doe"
+    }
+  },
+  "settings": {
+    "theme": "dark",
+    "notifications": {
+      "email": true,
+      "push": false,
+      "sms": false
+    },
+    "privacy": {
+      "profileVisible": true,
+      "showEmail": false
+    }
+  },
+  "stats": {
+    "posts": 42,
+    "followers": 1337,
+    "following": 256
+  },
+  "createdAt": "2023-01-15T08:30:00Z",
+  "lastActive": "2025-11-07T09:45:00Z"
+}

@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "message": "Operation completed successfully",
+  "timestamp": "2025-11-07T10:00:00Z",
+  "data": {
+    "id": "abc123",
+    "processed": true
+  }
+}

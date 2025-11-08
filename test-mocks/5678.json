@@ -1,0 +1,19 @@
+{
+  "orderId": "ORD-5678",
+  "items": [
+    {
+      "productId": "PROD-001",
+      "name": "Widget",
+      "quantity": 2,
+      "price": 29.99
+    },
+    {
+      "productId": "PROD-002",
+      "name": "Gadget",
+      "quantity": 1,
+      "price": 49.99
+    }
+  ],
+  "total": 109.97,
+  "status": "pending"
+}
