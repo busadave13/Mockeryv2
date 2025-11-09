@@ -14,7 +14,13 @@
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\""
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "docker:build": "docker build -t mockery:latest .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env -v \"$(pwd)/test-mocks:/mocks:ro\" mockery:latest",
+    "docker:compose:up": "docker-compose up -d",
+    "docker:compose:down": "docker-compose down",
+    "docker:compose:logs": "docker-compose logs -f",
+    "docker:compose:build": "docker-compose build"
   },
   "keywords": [
     "mock",
@@ -34,6 +40,7 @@
     "pino-http": "^8.5.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.56.1",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.10",
     "@types/node": "^20.10.0",

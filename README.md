@@ -269,16 +269,39 @@ npm run format:check
 
 ## Docker Support
 
-```dockerfile
-# Build
-docker build -t mockery .
+Mockery includes full Docker support with optimized multi-stage builds.
 
-# Run
-docker run -p 3000:3000 \
-  -v /path/to/mocks:/mocks \
-  -e MOCK_REPO_PATH=/mocks \
-  mockery
+### Quick Start with Docker Compose (Recommended)
+
+```bash
+# Start the service
+npm run docker:compose:up
+
+# View logs
+npm run docker:compose:logs
+
+# Stop the service
+npm run docker:compose:down
 ```
+
+### Manual Docker Commands
+
+```bash
+# Build the image
+npm run docker:build
+
+# Run the container
+npm run docker:run
+
+# Or use Docker CLI directly:
+docker build -t mockery:latest .
+docker run -p 3000:3000 \
+  --env-file .env \
+  -v "$(pwd)/test-mocks:/mocks:ro" \
+  mockery:latest
+```
+
+**📖 For comprehensive Docker documentation, deployment strategies, and production configurations, see [DOCKER.md](./DOCKER.md)**
 
 ## Environment Variables
 
